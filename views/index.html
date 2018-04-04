@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image-Browser</title>
+    <meta name="description" content="Simple Image Browser.">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Image-browser: <i class="tagline">A simple way to browse images.</i>
+      </h1>
+      <div class="search">
+        <div class="search-bar">
+          <input type="text" placeholder="Search Here" id="search-input"/>
+          <button id="search-btn">Submit</button>
+        </div>
+        <div id="api-text">You can also &nbsp;<a href="/api">use our API</a>.</div>
+      </div>
+      <p id="imcontinue">
+        
+      </p>
+    </header>
+
+    <main>
+      <div id="image-list">
+      </div>
+      <div class="more-btn-container">
+        <button id="more-btn" class="hidden">More Results</button>
+      </div>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
