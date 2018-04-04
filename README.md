@@ -1,27 +1,31 @@
-Welcome to the Glitch BETA
+Welcome to my simple Image-browser!
 ==========================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This project is a simple, server-side project for Freecodecamp. Clients can send a GET request to the server and get a list of images. This code has an MIT liscense, so feel free to use it as long as you follow the liscense.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+**Get started**
 
-Find out more [about Glitch](https://glitch.com/about).
+To get started, follow these steps:
+1. Clone this repo to your machine.
+2. Navigate to this repo with your cmd.
+3. Run "npm start" to start the server
+
+**API**
+
+*/api/search?titles=""&offset=""&count=""*
+
+Returns a list of images.
+*titles* - search query. (Required)
+*offset* - # of offset pages. Use to query through pages of results. (Optional, 0 by default)
+*count* - # of results per page. (Optional, 10 by default)
+
+*/api/search/recent*
+
+Returns a list of recent searches.
+Warning: uses temporary storage on server. Remove/Modify for production.
 
 
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Fog Creek](https://fogcreek.com/)
+Made by [Alex Cannon](https://www.linkedin.com/in/alexander-cannon-2a5b0513b/)
 -------------------
 
 \ ゜o゜)ノ
