@@ -6,9 +6,11 @@ This project is a simple, server-side project for Freecodecamp. Clients can send
 **Get started**
 
 To get started, follow these steps:
-1. Clone this repo to your machine.
-2. Navigate to this repo with your cmd.
-3. Run "npm start" to start the server
+1. Make a API account on imgur.
+2. Clone this repo to your machine.
+3. Navigate to this repo with your cmd.
+4. Add your Auth. CLIENT_ID="" in your .env file (IMPORTANT)
+5. Run "npm start" to start the server
 
 **API**
 
