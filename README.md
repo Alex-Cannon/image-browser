@@ -9,8 +9,8 @@ To get started, follow these steps:
 1. Make a API account on imgur.
 2. Clone this repo to your machine.
 3. Navigate to this repo with your cmd.
-4. Add your Auth. CLIENT_ID="" in your .env file (IMPORTANT)
-5. Run "npm start" to start the server
+4. Add your Auth. CLIENT_ID="" in your .env file. (**IMPORTANT!**)
+5. Run "npm start" to start the server.
 
 **API**
 
