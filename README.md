@@ -15,9 +15,9 @@ To get started, follow these steps:
 */api/search?titles=""&offset=""&count=""*
 
 Returns a list of images.
-*titles* - search query. (Required)
-*offset* - # of offset pages. Use to query through pages of results. (Optional, 0 by default)
-*count* - # of results per page. (Optional, 10 by default)
+* *titles* - search query. (Required)
+* *offset* - # of offset pages. Use to query through pages of results. (Optional, 0 by default)
+* *count* - # of results per page. (Optional, 10 by default)
 
 */api/search/recent*
 
