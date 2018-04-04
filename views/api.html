@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image-Browser</title>
+    <meta name="description" content="Simple Image Browser.">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Image-browser: <i class="tagline">Use the API</i>
+      </h1>
+    </header>
+
+    <main>
+      <h2>
+        Querying images
+      </h2>
+      <p>
+        Image-browser uses imgur's API to query images. This means our images are external, so
+        there's an additional HTTP request in the mix. Rather than<br>
+        Client(you) &lt;---&gt; Our Server<br>
+        There is a "third party":<br>
+        Client(you) &lt;---&gt; Our Server &lt;---&gt; Imgur Server &nbsp;&nbsp;&nbsp;<b>&lt;---Not optimal</b><br>
+        This means <b>we have no control</b> over image compression, what images you'll see, or what usage license(s) are attributed to them.<br>
+        So, it's quite obvious that this service is unoptimized and shouldn't be used in production!
+        It's really meant as a learning exercise both for me and you. So, feel free to fiddle around with it.<br>
+        If you still want to use this service, here is how:
+      </p>
+      <h2>
+        GET Request
+      </h2>
+      <p>
+        Note that if you run this on your local machine, replace the url from start to "/api/search?..." with your
+        domain name or http://localhost:port.
+      </p>
+      <div class="emphasis">
+        GET ---&gt; https://image-browser.glitch.me/api/search?<i>query</i>
+      </div>
+      <h2>
+        Troubleshooting
+      </h2>
+      <ul>
+        <div>
+          <h3>
+            Limits
+          </h3>
+          <p>
+            Imgur puts a 12,500 reqests/day limit on our API.<br>
+            Also, Users (via IP Address) that repeatedly sends requests will be blocked by Imgur.
+            <a href="https://apidocs.imgur.com/#intro" target="_blank">See the docs for more info</a>
+          </p>
+        </div>
+      </ul>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
